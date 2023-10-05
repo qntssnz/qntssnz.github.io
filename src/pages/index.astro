@@ -12,6 +12,8 @@
 	</head>
 	<body>
 		<h1 class="title">Qntssnz</h1>
+
+		<footer><a href="/">Impressum</a></footer>
 	</body>
 </html>
 
@@ -21,7 +23,7 @@
 		src: url("/fonts/JosefinSlab-VariableFont_wght.ttf") format("truetype");
 		font-weight: normal;
 		font-style: normal;
-		font-display: swap;
+		font-display: block;
 	}
 	html,
 	body {
@@ -30,24 +32,43 @@
 		background: #fff;
 		color: #444;
 		font:
-			16px/1.5 JosephinSlab,
+			333 17px/1.5 JosephinSlab,
 			serif;
+		font-variation-settings: "wght" 333;
+		width: 100%;
 		height: 100%;
 		display: grid;
 		align-items: center;
 		justify-items: center;
 		cursor: default;
+		grid-template-columns: auto;
+		grid-template-rows: 1fr auto;
+	}
+	body {
+		border-top: 1em solid #f52;
 	}
 	h1.title {
 		font-size: 144px;
 		font-weight: 144;
 		font-variation-settings: "wght" 144;
-		border-top: 2px solid #f520;
-		border-bottom: 2px solid #f520;
 		transition: 1s;
 	}
 	h1.title:hover {
+		color: #f520;
+	}
+	footer {
+		margin: 1em 2em;
+		justify-self: end;
+	}
+	footer a {
+		color: #444;
+		text-decoration: underline;
+		text-decoration-style: dotted;
+		text-decoration-color: #444;
+		transition: .5s;
+	}
+	footer a:hover {
 		color: #f52;
-		border-color: #f52;
+		text-decoration-color: #f52;
 	}
 </style>
